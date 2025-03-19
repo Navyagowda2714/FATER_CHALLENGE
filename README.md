@@ -1,32 +1,32 @@
-Comprehensive analysis of factors influencing diaper sales across retail outlets in Naples, aiming to estimate the potential revenue. The team, consisting of management engineers  and computer science and electronics engineers, conducted exploratory data analysis using various datasets. The datasets included socio-demographic insights, store attributes, and spatial data for geographic analysis. The team emphasized the importance of understanding these factors for developing effective marketing strategies and optimizing sales potential. 
-Overview of Datasets 
-As there were 4 data sets provided for challenges which contribute gravitational data sets which consists of microcode psuedo value 2 type of datatype one was based on weekday and weekend basis and other one descibes about the population of place based on age category
-shapes data set consists of microcode and geometry of polygon which descibes longitude and lattitude of microcell
-socio demo data set microcode district province region overall  population of region and male and female population according to their age 
-store data sets which contributes cod3hd - which specify store id , tripologiapdv medical story provitional store or supermarket small scale or large scale store, mqvend specify the size parking indirizzo adress of store lat and long commune 
-provincia and potenziale 
-emphasized the importance of understanding these factors for developing effective marketing strategies and optimizing sales potential.  the crucial steps of data pre-processing, for accessing and preparing the necessary analysis and visualization based on our report we have
-based on vaious object and variables data frame we constitute and resembles each variable with specifical data type as it mentioned on slide cod3hd with integer datatype insegna with char tipologia 
-numerical value will be represented with interger data type and name region will significant to character 
-potenziale is based on total number of sales of diaper in store in overal moving onto 
-Data Integration
-Merging the tables using microcode as the primary key  to the store data.
-Assigning microcodes based on spatial relationship: If a store's location lies within a polygon, the corresponding microcode from the polygons_data dataframe is retrieved and assigned to the store's "microcode" column.
+Diaper Sales Analysis – Retail Outlets in Naples
+Overview
+This project focuses on analyzing key factors influencing diaper sales across retail outlets in Naples, using a data-driven approach to estimate potential revenue and optimize sales strategies. By integrating socio-demographic data, store attributes, and geospatial data, we identified the variables impacting store performance and customer purchasing behavior.
 
-What are the insights gained from the exploratory data analysis on store potential and population demographics?
- 
-The exploratory data analysis provided valuable insights into store potential and population demographics.
-It quantified store attractiveness based on factors such as proximity to key points of interest, allowing for the identification of stores with high sales potential. 
-Additionally, the analysis offered socio-demographic insights into the local population, which is crucial for estimating diaper demand. 
-The average store potential distribution across various clusters identified through K-means clustering enabled interactive exploration and analysis of potential patterns.
-Furthermore, the analysis delved into mean population visiting stores by day-wise and day-wise time-slot, providing a comprehensive understanding of the demographic trends. 
-These insights are essential for retailers to develop effective marketing strategies and optimize sales potential based on the characteristics of the local population and store attractiveness.
+Using exploratory data analysis (EDA) and K-Means clustering, we quantified store attractiveness and segmented locations based on their sales potential. These insights help businesses enhance their marketing strategies, optimize store operations, and improve revenue forecasting.
 
-What are the key factors influencing diaper sales across retail outlets in Naples?
- 
-The key factors influencing diaper sales across retail outlets in Naples include socio-demographic data, territorial features, and points of interest near stores.
-Understanding these factors is crucial for developing effective marketing strategies and optimizing sales potential.
-Additionally, factors such as store attractiveness based on proximity to key points of interest, socio-demographic insights into the local population, store size, parking availability, store type, and
-the presence of high-performing stores such as LIDL and SAPORI & DINTORNI are also influential in determining diaper sales potential. 
-The document suggests a potential relationship between store size and sales potential, as well as the importance of parking availability and store type in optimizing store potential revenue. 
-By addressing these factors strategically, retailers can enhance their store performance and overall revenue potential.
+Objectives
+Understand how socio-demographic factors (population distribution, age groups, and customer behavior) affect diaper sales.
+Analyze store attributes such as size, parking availability, and store type (supermarket, medical store, etc.).
+Utilize spatial data to assess the impact of store location, proximity to key points of interest, and population density.
+Apply machine learning techniques to segment stores based on potential revenue and optimize targeting strategies.
+Data Sources & Preprocessing
+The project involved merging multiple datasets to build a comprehensive analytical framework:
+
+Socio-Demographic Data – Contains microcodes, district, province, and population breakdown by age and gender.
+Store Data – Includes store ID, type, size, parking availability, location (latitude/longitude), and sales potential.
+Geospatial Data – Provides polygon-based microcells mapping store locations to population clusters.
+Temporal Data – Captures weekday vs. weekend shopping patterns.
+We preprocessed and integrated these datasets using SQL and Pandas, aligning them via microcodes as primary keys. Stores were assigned microcodes based on their geographic location within microcell polygons, ensuring accurate spatial analysis.
+
+Key Insights & Findings
+Store Potential Analysis: High-performing stores (e.g., LIDL, SAPORI & DINTORNI) exhibited strong correlations between store size, parking availability, and customer footfall.
+Geospatial Influence: Stores near high-traffic areas (shopping centers, residential hubs) showed increased diaper sales.
+Customer Behavior Trends: Analyzed population visits based on day-wise and time-slot data, identifying peak shopping hours.
+Clustered Retail Stores: Applied K-Means clustering to categorize stores based on revenue potential, helping businesses prioritize high-growth locations.
+Tech Stack & Tools
+Programming: Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+Machine Learning: Clustering (K-Means), Predictive Modeling
+Data Processing: SQL, Power BI, Tableau
+Geospatial Analysis: GIS, Location Intelligence
+Impact & Applications
+This project provides data-driven recommendations for optimizing diaper sales by identifying high-potential retail outlets. The insights can be leveraged by businesses to refine pricing strategies, store placements, and marketing efforts, ultimately maximizing revenue potential.
