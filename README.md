@@ -19,6 +19,7 @@ src="https://capsule-render.vercel.app/api?type=waving&color=0:070A12,45:1E3A8A,
 
 <br/><br/>
 
+<a href="#-quickstart"><b>Quickstart</b></a> •
 <a href="#-project-overview"><b>Overview</b></a> •
 <a href="#-business-problem"><b>Business Problem</b></a> •
 <a href="#-creative-workflow"><b>Creative Workflow</b></a> •
@@ -27,6 +28,38 @@ src="https://capsule-render.vercel.app/api?type=waving&color=0:070A12,45:1E3A8A,
 <a href="#-contact"><b>Contact</b></a>
 
 </div>
+
+---
+
+
+<!-- quickstart:start -->
+# 🚀 Quickstart
+
+[![rmd-check](https://github.com/Navyagowda2714/FATER_CHALLENGE/actions/workflows/rmd-check.yml/badge.svg)](https://github.com/Navyagowda2714/FATER_CHALLENGE/actions/workflows/rmd-check.yml)
+
+**Requirements:** R 4.2+ and RStudio (recommended). The challenge datasets were provided by Fater for the competition and are **not** included in this repo.
+
+```bash
+git clone https://github.com/Navyagowda2714/FATER_CHALLENGE.git
+cd FATER_CHALLENGE
+Rscript install_packages.R
+```
+
+Place the challenge files next to the `.Rmd` files: `stores_NA.csv`, `socio_demo_NA.csv`, `gravitation_NA.csv` and `result.csv`. Then knit the report:
+
+```bash
+Rscript -e 'rmarkdown::render("Project_fater_F.Rmd")'   # → Project_fater_F.html
+```
+
+| File | What it is |
+|---|---|
+| `Project_fater_F.Rmd` | Final analysis: store/demographic data prep, PCA (FactoMineR), clustering, regression and tree models, maps |
+| `Fater_challenge.Rmd` | Earlier working draft of the same analysis |
+| `install_packages.R` | Installs every R package the analysis uses |
+| `Fater_Team_Navy_ppt.pptx` | Final presentation |
+
+CI extracts the R code from every `.Rmd` on each push and checks that it parses.
+<!-- quickstart:end -->
 
 ---
 

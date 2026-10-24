@@ -104,7 +104,7 @@ These steps are crucial for accessing and preparing the necessary spatial and st
 stores_polygon <- st_read("C:/Users/giann/Downloads/shapes_NA.csv")
 str(stores_polygon)
 
-stores_data <- read.csv("C:/Users/giann/Downloads/stores_NA (2).csv")
+stores_data <- read.csv("stores_NA.csv")
 str(stores_data)
 ```
 
