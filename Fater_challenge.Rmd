@@ -624,7 +624,7 @@ ggplotly(ggplot(average_potential, aes(x = Parking, y = AveragePotential, fill =
   theme_minimal() +
   labs(title = "Average Store Potential by Parking",
        x = "Parking",
-       y = "Average Potential") +
+       y = "Average Potential"))
 ```
 
 Based on the analysis of average store potential by area, it is evident that comune Pollena Trocchia has the highest average store potential of 0.016 as compared to other areas. This suggests that the comune presents a significant opportunity for retail businesses, indicating a favorable market environment for store development and expansion efforts. Understanding the factors contributing to the high potential in the area, such as population demographics, economic indicators, and geographic location, can provide valuable insights for strategic decision-making in retail operations and marketing initiatives.
@@ -732,7 +732,6 @@ table(socioDemo_storeMcode_with_parking$cluster)
 ```
 
 
-```{r}
 ```{r}
 cluster_counts <- c( 67,  45,  76,  56,  10, 131  )
 clusters <- 1:6
